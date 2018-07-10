@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div>
+    <ol class="breadcrumb">
+        <li>
+            <i class="fa fa-dashboard"></i>  <a onclick="cargarEscritorio()">Escritorio</a>
+        </li>
+        <li class="active">
+            <i class="fa fa-fw fa-table"></i> Productos
+        </li>
+    </ol>
+	</div>
+	<spam id="alerta"></spam>
+	<div class="row">
+		<div class="col-sm-4 text-left">
+			<button type="button" class="btn btn-info btn-sm" onclick="nuevoProducto()">
+          <span class="glyphicon glyphicon-plus"></span> Agregar producto
+      </button>
+		</div>
+		<div class="col-sm-4">
+
+		</div>
+		<div class="col-sm-4 text-right">
+			<label>Ordenar por:</label>
+			<select id="cbFiltrar" class="input-sm" onchange="ordenarProductos(this.value)">
+				<option>Proveedor</option>
+				<option>Categoria</option>
+				<option>Fabricante</option>
+				<option value="Cantidad">Cantidad Menor</option>
+				<option value="Cantidad DESC">Cantidad Mayor</option>
+			</select>
+			<!--<input type="text" id="tfBuscar" onkeyup="buscarProducto()" placeholder="Buscar..."/>
+			<button class="btn btn-default btn-sm" onclick="buscar()">
+				<spam class="glyphicon glyphicon-search"></spam>
+			</button>-->
+		</div>
+	</div>
+	&nbsp
+	<div id="contenido"></div>
+	<div id="modal-productos"></div>
+
+</body>
+</html>

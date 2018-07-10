@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div>
+    <ol class="breadcrumb">
+        <li class="active">
+            <i class="fa fa-dashboard"></i>  <a onclick="cargarEscritorio()">Escritorio</a>
+        </li>
+    </ol>
+		<div class="row">
+				<div class="col-lg-12">
+						<div class="alert alert-info alert-dismissable">
+								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+								<i class="fa fa-info-circle"></i>  <strong>Bienvenido a Admin Store!</strong> Sistema gestor de inventario
+						</div>
+				</div>
+		</div>
+		<!-- /.row -->
+
+		<div class="row">
+				<div class="col-lg-3 col-md-6">
+						<div class="panel panel-primary">
+								<div class="panel-heading">
+										<div class="row">
+												<div class="col-xs-3">
+														<i class="fa fa-table fa-5x"></i>
+												</div>
+												<div class="col-xs-9 text-right">
+														<div class="huge" id="panelProductos">0</div>
+														<div>Productos</div>
+												</div>
+										</div>
+								</div>
+								<a onclick="cargarProductos()">
+										<div class="panel-footer">
+												<span class="pull-left">Ver detalles</span>
+												<span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+												<div class="clearfix"></div>
+										</div>
+								</a>
+						</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+						<div class="panel panel-green">
+								<div class="panel-heading">
+										<div class="row">
+												<div class="col-xs-3">
+														<i class="fa fa-money fa-5x"></i>
+												</div>
+												<div class="col-xs-9 text-right">
+														<div class="huge" id="panelVentas">0</div>
+														<div>Ventas</div>
+												</div>
+										</div>
+								</div>
+								<a onclick="cargarVentas()">
+										<div class="panel-footer">
+												<span class="pull-left">Ver detalles</span>
+												<span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+												<div class="clearfix"></div>
+										</div>
+								</a>
+						</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+						<div class="panel panel-yellow">
+								<div class="panel-heading">
+										<div class="row">
+												<div class="col-xs-3">
+														<i class="fa fa-users fa-5x"></i>
+												</div>
+												<div class="col-xs-9 text-right">
+														<div class="huge" id="panelProveedores">0</div>
+														<div>Proveedores</div>
+												</div>
+										</div>
+								</div>
+								<a onclick="cargarProveedores()">
+										<div class="panel-footer">
+												<span class="pull-left">Ver detalles</span>
+												<span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+												<div class="clearfix"></div>
+										</div>
+								</a>
+						</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+						<div class="panel panel-red">
+								<div class="panel-heading">
+										<div class="row">
+												<div class="col-xs-3">
+														<i class="fa fa-exclamation-triangle fa-5x"></i>
+												</div>
+												<div class="col-xs-9 text-right">
+														<div class="huge" id="panelAgotados">0</div>
+														<div>Productos agotados!</div>
+												</div>
+										</div>
+								</div>
+								<a onclick="cargarProductos()">
+										<div class="panel-footer">
+												<span class="pull-left">Ver detalles </span>
+												<span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+												<div class="clearfix"></div>
+										</div>
+								</a>
+						</div>
+				</div>
+		</div>
+		<!-- /.row -->
+		<div class="row">
+				<div class="col-lg-3 col-md-6">
+						<div class="panel panel-default">
+								<div class="panel-heading">
+										<div class="row">
+												<div class="col-xs-3">
+														<i class="fa fa-shopping-cart fa-5x"></i>
+												</div>
+												<div class="col-xs-9 text-right">
+														<div class="huge">+</div>
+												</div>
+										</div>
+								</div>
+								<a onclick="puntoDeVenta()">
+										<div class="panel-footer">
+												<span class="pull-left">Punto de venta</span>
+												<span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+												<div class="clearfix"></div>
+										</div>
+								</a>
+						</div>
+				</div>
+
+
+		</div>
+		<!--row-->
+	</div>
+	<spam id="alerta"></spam>
+	<div id="contenido"></div>
+	<div id="modal-inicio"></div>
+
+</body>
+</html>

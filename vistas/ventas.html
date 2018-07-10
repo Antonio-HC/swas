@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div>
+    <ol class="breadcrumb">
+        <li>
+            <i class="fa fa-dashboard"></i>  <a onclick="cargarEscritorio()">Escritorio</a>
+        </li>
+        <li class="active">
+            <i class="fa fa-fw fa-bar-chart-o"></i> Ventas
+        </li>
+    </ol>
+	</div>
+	<spam id="alerta"></spam>
+	<!--<div class="row">
+		<div class="col-sm-12">
+			<button type="button" class="btn btn-info btn-sm" onclick="nuevaVenta()">
+          <span class="glyphicon glyphicon-plus"></span> Nueva venta
+      </button>
+		</div>
+	</div>-->
+	<div id="opciones" class="row">
+		<div class="col-sm-6">
+			<button type="button" class="btn btn-info btn-sm" onclick="nuevaVenta()">
+					<span class="glyphicon glyphicon-plus"></span> Nueva venta
+			</button>
+		</div>
+		<div class="col-sm-6 text-right">
+			<label>Filtrar:</label>
+			<select id="cbFiltrar" class="input-sm" onchange="ordenarVentas(this.value)">
+				<option value="todo">Todos</option>
+				<option value="hoy">Hoy</option>
+			</select>
+		</div>
+	</div>
+	<div id="contenido"></div>
+	<div id="modal-ventas"></div>
+</body>
+</html>
